@@ -2,6 +2,13 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background: #f0f0f5;
+}
+
+a {
+    text-decoration: none;
+}
 /*BOX MODEL
 Modelo de caixa
 toda caixa tem
@@ -10,16 +17,45 @@ bordas, cor, fundo, maneira que é vista pelo html (display)
 alinhamentos
 */
 /**/
-header {
+
+#page-home {
+    height: 100vh; /*redimensionavel*/
+    background: url('/icones/home-background.svg') no-repeat;
+    background-position: 45vw bottom; /*35 de view width pra baixo*/
+}
+
+#page-home .content {
+    width: 90%; /*largura*/ /*redimensionavel*/
+    max-width: 1100px;  /*fixo*/
+    
+    margin: 0 auto;
+}
+
+#page-home header {
+    margin-top: 48px;
     display: flex; /*coloca os filhos da tag um do lado do outro*/
     align-items: center; /*Alinhando ao centro*/
     justify-content: space-between; /*Espaço entre eles*/
 
 }
 
-.content {
-    width: 90%; /*largura*/
-    max-width: 1100px;
+#page-home header a{
+    display: flex;
+
+    color: #322153;
+    font-weight: 700; /*Peso da fonte que foi escolhida no site fonts*/
+
+}
+
+#page-home header a span {
+    margin-right: 16px;
+    display: flex;
+    background-image: url('/icones/log-in.svg');
+
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main {
     
-    margin: 0 auto;
 }

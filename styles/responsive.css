@@ -1,0 +1,29 @@
+
+@media(max-width: 900px){ /*configurando quando  a pag chegar no maximo de largura */
+    #page-home {
+        background-position-x: 70vw;
+    }
+
+    #page-home .content{
+        align-items: center;
+        text-align: center;
+    }
+    #page-home header a {
+        position: absolute; 
+        bottom: 48px;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main{
+        align-items: center;
+    }
+}
+@media(min-width: 1700px){ /*Ate 760px ele vai calcular*/
+    #page-home {
+        background-position-x: 200px;
+    }
+
+    
+}
